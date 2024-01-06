@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:ital,wght@1,800&display=swap');
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+span{font-size: 30px}
+p{color: black;}
+input{
+    border-radius: 8px; 
+    border: 1px solid rgb(47, 79, 79);
+    height: 35px;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.login_info{
+    border: 3px solid grey;
+    width: 550px;
+    height: 600px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+} .login_info > .login{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 100px;
+} .login_info > .email_area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}.login_info > .password_area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.button_area{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 12px;
+}.button_area > button{
+    border-radius: 20px;
+    border:1px solid rgb(47, 79, 79);
+    height: 50px;
+    width: 100%;
+    background-color: rgb(76, 0, 163);
+    color: white;
+    border-color: rgb(76, 0, 163);
+    font-size: 30px;
+}
+.signup_text{
+    width: 520px;
+    display: flex;
+    padding: 7px;
+    justify-content: right;
+} .signup_text > .signup_link{
+    padding: 10px;
+    color: rgb(150, 0, 150);
+    font-size: larger;
+}
