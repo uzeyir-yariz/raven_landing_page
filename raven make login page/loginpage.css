@@ -5,60 +5,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/** yazı özellikleri*/
+a{text-decoration: none;}
 span{font-size: 30px}
-p{color: black;}
+p{color: rgb(255, 255, 255);}
 input{
-    border-radius: 8px; 
-    border: 1px solid rgb(47, 79, 79);
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
     height: 35px;
     width: 100%;
+    background: transparent;
 }
-body{
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    place-items: center;
-}
-.login_info{
-    border: 3px solid grey;
-    width: 550px;
-    height: 600px;
-    border-radius: 7px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-} .login_info > .login{
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    height: 100px;
-} .login_info > .email_area{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}.login_info > .password_area{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    justify-content: center;
-    align-items: center;
-}
-.button_area{
-    width: 100%;
-    display: flex;
-    justify-content: right;
-    padding: 12px;
-}.button_area > button{
+/** duyme */
+button{
     border-radius: 20px;
-    border:1px solid rgb(47, 79, 79);
     height: 50px;
     width: 100%;
     background-color: rgb(76, 0, 163);
@@ -66,13 +27,131 @@ body{
     border-color: rgb(76, 0, 163);
     font-size: 30px;
 }
-.signup_text{
+/** body */
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpeg");
+}
+/** Giriş bilgilerinin alınacağı kısım email,password */
+.login_info{
+    border: 3px solid grey;
+    width: 550px;
+    height: 500px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    backdrop-filter: blur(8px);
+/**Login yazısı */
+} .login_info > .login{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 100px;
+/** email girilme kısmı */
+} .login_info > .login_email_area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+/**password girilme kısmı */
+}.login_info > .login_password_area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+/** login düymesi*/
+.login_button_area{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 12px;
+}
+/**register için link */
+.register_text_area{
+    padding: 7px;
     width: 520px;
     display: flex;
-    padding: 7px;
     justify-content: right;
-} .signup_text > .signup_link{
+} .register_text_area > .register_link{
+    padding-left: 10px;
+    color: rgb(150, 0, 150);
+    font-size: larger;
+}
+/**register kısmı */
+.register_info{
+    border: 3px solid grey;
+    width: 550px;
+    height: 600px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    backdrop-filter: blur(8px);
+/**Login yazısı */
+} .register_info > .register{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    height: 100px;
+} .register_info > .username_area{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+/** email girilme kısmı */
+} .register_info > .register_email_area{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+/**password girilme kısmı */
+}.register_info > .register_password_area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+/** register düymesi*/
+.register_button_area{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 12px;
+}
+/**login için link */
+.login_text_area{
+    padding: 7px;
+    width: 520px;
+    display: flex;
+    justify-content: right;
+} .login_text_area > .login_link{
+    padding-left: 10px;
     color: rgb(150, 0, 150);
     font-size: larger;
 }

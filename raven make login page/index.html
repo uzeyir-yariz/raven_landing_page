@@ -7,21 +7,43 @@
     <link rel="stylesheet" href="loginpage.css">
 </head>
 <body>
-    <main class="login_info">
+    <main class="login_info" id="login_main">
         <section class="login"><h1>Login</h1></section>
-        <section class="email_area">
+        <section class="login_email_area">
             <span>E-mail</span>
-            <input type="email" placeholder="email@gmail.com">
+            <input type="email" placeholder=" email@gmail.com">
         </section>
-        <section class="password_area">
+        <section class="login_password_area">
             <span>Password</span>
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder=" Password">
         </section>
         <section class="button_area">
-            <button>Login</button>
+            <button id="duyme">Login</button>
         </section>
-        <section class="signup_text">
-            <p>Don't you have a accont? <p>Let's </p>  <p class="signup_link">Sign up</p></p>
+        <section class="register_text_area">
+            <p class="register_text">Don't you have an accont? <p> Let's </p>  <a href="#" class="register_link">Register</a></p>
+        </section>
+    </main>
+    
+    <main class="register_info">
+        <section class="register"><h1>Register</h1></section>
+        <section class="username_area">
+            <span>Username</span>
+            <input type="text" placeholder=" Please enter a name">
+        </section>
+        <section class="register_email_area">
+            <span>E-mail</span>
+            <input type="email" placeholder=" email@gmail.com">
+        </section>
+        <section class="register_password_area">
+            <span>Password</span>
+                <input type="password" placeholder=" Password">
+        </section>
+        <section class="register_button_area">
+            <button>Register</button>
+        </section>
+        <section class="login_text_area">
+            <p>Do you have an accont? <p> Let's </p>  <a href="#" class="login_link">Login</a></p>
         </section>
     </main>
 </body>
